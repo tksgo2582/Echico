@@ -1,5 +1,12 @@
 //연구소
 // n3  -2560 까지 1초.... 
+/* 
+    1. dfs로 3개의 벽을 세우기
+    2. 3개 세웠다면 virus 검사!... ( temp 배열 로 기존 맵 복사해서 사용...)
+    3. 다시 3개 세우고 반복...
+
+    두번의 dfs 를 구현해야 하는점이 생각 어려웠다.
+ */
 #include <bits/stdc++.h>
 using namespace std;
 #define MAX_NM 10
