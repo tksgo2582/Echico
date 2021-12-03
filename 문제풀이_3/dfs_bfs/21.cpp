@@ -86,8 +86,8 @@ int main() {
                 }
             }
         }
-        if(check_cnt >= N *N){
-            break;
+        if(check_cnt >= N *N){  // 모두검사했는데 각 방마다 들어갔을경우
+            break;              // 인구 이동 끝
         }
         moved_day++;
     }

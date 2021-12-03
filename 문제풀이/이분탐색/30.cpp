@@ -26,10 +26,10 @@ vector<string> reversed_arr[10001];
 vector<int> solution(vector<string> words, vector<string> queries) {
     vector<int> answer;
     for(int i =0; i < words.size(); i++){
-        string word = words[i];
-        arr[word.size()].push_back(word);
-        reverse(word.begin(), word.end());
-        reversed_arr[word.size()].push_back(word);
+        string word = words[i];             // 단어 하나씩 꺼내기
+        arr[word.size()].push_back(word);   // 길이별로 단어 저장
+        reverse(word.begin(), word.end());  // 거꾸로 뒤집기
+        reversed_arr[word.size()].push_back(word);  // 리버스 배열에서 길이별로 저장
     }
     
     for(int i =0; i < 10001; i++){  //길이별 벡터배열 정렬
